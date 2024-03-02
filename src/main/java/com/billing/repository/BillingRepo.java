@@ -16,5 +16,5 @@ public interface BillingRepo {
 
 	public List<BillingModel> getAll();
 
-	public void deleteAll();
+	
 }
