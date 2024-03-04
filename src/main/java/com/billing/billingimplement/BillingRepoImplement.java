@@ -10,7 +10,10 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 26432e87966c92fa917cc10bd3a0341dc3e1b8ef
 import com.billing.model.BillingModel;
 import com.billing.repository.BillingRepo;
 
@@ -21,9 +24,13 @@ public class BillingRepoImplement implements BillingRepo {
 	private static final String DELETE_QUERY = "DELETE FROM billing_model WHERE id=:id";
 	private static final String GETBYID = "SELECT * FROM billing_model WHERE id=:id";
 	private static final String UPDATE_QUERY = "UPDATE billing_model SET product_name=:product_name,mrp=:mrp,gst=:gst WHERE id=:id";
+<<<<<<< HEAD
     
 	
 	
+=======
+
+>>>>>>> 26432e87966c92fa917cc10bd3a0341dc3e1b8ef
 	@Autowired
 	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
@@ -65,10 +72,6 @@ public class BillingRepoImplement implements BillingRepo {
 		return list;
 	}
 
-	@Override
-	public void deleteAll() {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 }
